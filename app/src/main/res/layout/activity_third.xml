@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:id="@+id/tvMovie"
+            android:layout_width="317dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/movie_db_app"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintDimensionRatio="5.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFindMovies"
+            android:layout_width="317dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/find_your_movies"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintDimensionRatio="11.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMovie" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="252dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/view_background"
+            android:hint="@string/search_here"
+            android:paddingLeft="10dp"
+            app:layout_constraintDimensionRatio="5.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFindMovies"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="171dp"
+            android:background="@drawable/view_background"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintStart_toEndOf="@id/etSearch"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvCategories"
+            android:layout_width="317dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/categories"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintDimensionRatio="11.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+        <TextView
+            android:id="@+id/tvTopRated"
+            android:layout_width="106dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/view_background"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/top_rated"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCategories" />
+
+        <TextView
+            android:id="@+id/tvPopular"
+            android:layout_width="106dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/view_background"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:text="@string/popular"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toEndOf="@id/tvTopRated"
+            app:layout_constraintTop_toBottomOf="@id/tvCategories" />
+
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="29dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTopRated" />
+
+
+        <View
+            android:id="@+id/vWatchList"
+            android:layout_width="134dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/button_view_background"
+            android:paddingRight="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTopRated" />
+
+        <TextView
+            android:id="@+id/tvWatchList"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/watch_list_movies"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/vWatchList"
+            app:layout_constraintTop_toTopOf="@id/vWatchList" />
+
+        <ImageView
+            android:id="@+id/ivTurned"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_turned_in_24"
+            app:layout_constraintStart_toStartOf="@id/vWatchList"
+            app:layout_constraintTop_toTopOf="@id/vWatchList" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

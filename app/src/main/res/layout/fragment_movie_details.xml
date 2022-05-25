@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="210.94dp"
+        android:background="@drawable/fragment_movie_details_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFragmentPoster"
+        android:layout_width="95dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="151dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFragmentMovieTitle"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12.06dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/ivFragmentPoster"
+        app:layout_constraintTop_toBottomOf="@id/ivBackgroundImage" />
+
+    <TextView
+        android:id="@+id/tvFirstAction"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/view_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:text="@string/action"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivFragmentPoster" />
+
+    <TextView
+        android:id="@+id/tvSecondAction"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/view_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:text="@string/action"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toEndOf="@id/tvFirstAction"
+        app:layout_constraintTop_toBottomOf="@id/ivFragmentPoster" />
+
+    <TextView
+        android:id="@+id/tvThirdAction"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/view_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:text="@string/action"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toEndOf="@id/tvSecondAction"
+        app:layout_constraintTop_toBottomOf="@id/ivFragmentPoster" />
+
+    <TextView
+        android:id="@+id/tvAboutMovie"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/about_movie"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstAction" />
+
+    <TextView
+        android:id="@+id/tvReviews"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/reviews"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvAboutMovie"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstAction" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="317dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAboutMovie" />
+
+    <TextView
+        android:id="@+id/tvFragmentReleaseDate"
+        android:layout_width="317dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOverview" />
+
+    <TextView
+        android:id="@+id/tvFragmentAverageRating"
+        android:layout_width="317dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFragmentReleaseDate" />
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFragmentAverageRating" />
+
+    <View
+        android:id="@+id/vAddWatchList"
+        android:layout_width="253dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_view_background"
+        android:paddingRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPopularity" />
+
+    <TextView
+        android:id="@+id/tvAddToWatchList"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/add_to_watch_list"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/vAddWatchList"
+        app:layout_constraintTop_toTopOf="@id/vAddWatchList" />
+
+    <ImageView
+        android:id="@+id/ivTurned"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_turned_in_24"
+        app:layout_constraintEnd_toEndOf="@id/vAddWatchList"
+        app:layout_constraintTop_toTopOf="@id/vAddWatchList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

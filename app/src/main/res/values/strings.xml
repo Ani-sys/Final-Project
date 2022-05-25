@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="login_to_your_account">Login \n\To your account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="skip_login">Skip login</string>
+    <string name="movie_db_app">Movie DB App</string>
+    <string name="find_your_movies">Find your movies</string>
+    <string name="search_here">Search Here...</string>
+    <string name="categories">Categories</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="watch_list">Watch List</string>
+    <string name="watch_list_movies">Watch List</string>
+    <string name="title">Title:</string>
+    <string name="avangers_end_game">Avangers End Game</string>
+    <string name="release_date">Release Date:</string>
+    <string name="_2019_08_03">2019-08-03</string>
+    <string name="average_rating">Average Rating:</string>
+    <string name="_9_2">9.2</string>
+    <string name="action">Action</string>
+    <string name="about_movie">About Movie</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_to_watch_list">Add to Watch List</string>
+</resources>
